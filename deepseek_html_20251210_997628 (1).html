@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitney Mont | Premier Legal Research & Consultation Services</title>
+    <meta name="description" content="Whitney Mont provides innovative legal research solutions across litigation, intellectual property, restructuring, and transactional services with integrated multidisciplinary teams.">
+    <meta name="keywords" content="legal research, litigation, intellectual property, restructuring, transactional law, legal consultation">
+    <meta name="author" content="Whitney Mont Legal Research">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== CSS RESET & VARIABLES ===== */
+        :root {
+            /* Color Palette */
+            --primary-dark: #0A192F;
+            --primary-blue: #1A3A5F;
+            --accent-gold: #C9A769;
+            --accent-teal: #2A9D8F;
+            --accent-red: #E63946;
+            --light-gray: #F8FAFC;
+            --medium-gray: #E2E8F0;
+            --text-dark: #1E293B;
+            --text-medium: #475569;
+            --text-light: #64748B;
+            --white: #FFFFFF;
+            --off-white: #F9F9F9;
+            
+            /* Spacing */
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-xxl: 3rem;
+            
+            /* Typography */
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 2rem;
+            --font-size-4xl: 2.5rem;
+            --font-size-5xl: 3rem;
+            
+            /* Effects */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-xl: 16px;
+            
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-base: 300ms ease;
+            --transition-slow: 500ms ease;
+        }
+
+        /* Reset & Base Styles */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-lg);
+            color: var(--primary-dark);
+        }
+
+        h1 { font-size: var(--font-size-5xl); }
+        h2 { font-size: var(--font-size-4xl); }
+        h3 { font-size: var(--font-size-3xl); }
+        h4 { font-size: var(--font-size-2xl); }
+        h5 { font-size: var(--font-size-xl); }
+
+        p {
+            margin-bottom: var(--spacing-lg);
+            color: var(--text-medium);
+            font-size: var(--font-size-lg);
+            line-height: 1.7;
+        }
+
+        .text-lead {
+            font-size: var(--font-size-xl);
+            color: var(--text-medium);
+            line-height: 1.8;
+        }
+
+        /* Links & Lists */
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color var(--transition-fast);
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        /* Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-xl);
+        }
+
+        .section {
+            padding: var(--spacing-xxl) 0;
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .d-none { display: none !important; }
+        .d-block { display: block; }
+        .d-flex { display: flex; }
+        .align-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .gap-sm { gap: var(--spacing-sm); }
+        .gap-md { gap: var(--spacing-md); }
+        .gap-lg { gap: var(--spacing-lg); }
+        .gap-xl { gap: var(--spacing-xl); }
+        .mb-xs { margin-bottom: var(--spacing-xs); }
+        .mb-sm { margin-bottom: var(--spacing-sm); }
+        .mb-md { margin-bottom: var(--spacing-md); }
+        .mb-lg { margin-bottom: var(--spacing-lg); }
+        .mb-xl { margin-bottom: var(--spacing-xl); }
+        .mb-xxl { margin-bottom: var(--spacing-xxl); }
+        .mt-xl { margin-top: var(--spacing-xl); }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-xl);
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            font-size: var(--font-size-base);
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-gold), #D9B87E);
+            color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+        }
+
+        .btn-urgent {
+            background: linear-gradient(135deg, var(--accent-red), #D32F2F);
+            color: var(--white);
+            animation: pulse 2s infinite;
+        }
+
+        .btn-urgent:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(230, 57, 70, 0.3);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.5); }
+            70% { box-shadow: 0 0 0 10px rgba(230, 57, 70, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0); }
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--white);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-dark);
+        }
+
+        .btn-small {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            font-size: var(--font-size-sm);
+        }
+
+        .btn-large {
+            padding: var(--spacing-lg) var(--spacing-xxl);
+            font-size: var(--font-size-lg);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all var(--transition-base);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-lg) 0;
+            height: 80px;
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--primary-dark);
+            z-index: 1002;
+        }
+
+        .logo-icon {
+            color: var(--accent-gold);
+            font-size: var(--font-size-2xl);
+        }
+
+        .logo span {
+            color: var(--accent-gold);
+        }
+
+        /* Desktop Navigation */
+        .nav-links {
+            display: flex;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            padding: var(--spacing-sm) 0;
+            color: var(--text-medium);
+            font-size: var(--font-size-base);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-dark);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-teal));
+            bottom: 0;
+            left: 0;
+            transition: width var(--transition-base);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* ===== HAMBURGER MENU BUTTON ===== */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1002;
+        }
+
+        .hamburger-line {
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-dark);
+            border-radius: 3px;
+            transition: all var(--transition-base);
+            transform-origin: left center;
+        }
+
+        .hamburger.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg);
+            transform-origin: left center;
+        }
+
+        .hamburger.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+
+        .hamburger.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg);
+            transform-origin: left center;
+        }
+
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 25, 47, 0.95);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-slow);
+            backdrop-filter: blur(5px);
+        }
+
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            background: var(--white);
+            z-index: 1000;
+            padding: 100px var(--spacing-xl) var(--spacing-xl);
+            box-shadow: var(--shadow-xl);
+            transition: right var(--transition-slow);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .mobile-nav-link {
+            font-size: var(--font-size-xl);
+            font-weight: 500;
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--medium-gray);
+            color: var(--text-dark);
+            transition: all var(--transition-base);
+        }
+
+        .mobile-nav-link:hover {
+            color: var(--accent-gold);
+            padding-left: var(--spacing-md);
+        }
+
+        .mobile-contact-details {
+            margin-top: auto;
+            background: var(--light-gray);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-lg);
+        }
+
+        .mobile-contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .mobile-contact-detail i {
+            color: var(--accent-gold);
+            font-size: var(--font-size-xl);
+            margin-right: var(--spacing-md);
+            margin-top: 2px;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.95) 0%, rgba(26, 58, 95, 0.9) 100%);
+            color: var(--white);
+            padding: 180px 0 120px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" opacity="0.05"><path d="M0 0h1200v800H0z" fill="%23ffffff"/><circle cx="300" cy="200" r="50" fill="%23C9A769"/><circle cx="900" cy="600" r="80" fill="%232A9D8F"/><rect x="600" y="400" width="100" height="100" fill="%23E63946"/></svg>');
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero-title {
+            font-size: var(--font-size-5xl);
+            color: var(--white);
+            margin-bottom: var(--spacing-xl);
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: var(--font-size-xl);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--spacing-xxl);
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xxl);
+        }
+
+        @media (max-width: 768px) {
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: var(--accent-gold);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: var(--font-size-sm);
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: var(--spacing-sm);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ===== URGENT ACTION BAR ===== */
+        .urgent-bar {
+            background: linear-gradient(90deg, var(--primary-dark), var(--primary-blue));
+            color: var(--white);
+            padding: var(--spacing-md) 0;
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+            box-shadow: var(--shadow-md);
+        }
+
+        .urgent-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+        }
+
+        .urgent-text {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            font-weight: 500;
+        }
+
+        .urgent-text i {
+            color: var(--accent-gold);
+            font-size: var(--font-size-xl);
+        }
+
+        .urgent-actions {
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services {
+            background-color: var(--off-white);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-teal));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: var(--font-size-lg);
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-xl);
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .service-icon {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+            color: var(--white);
+            font-size: var(--font-size-3xl);
+            padding: var(--spacing-xl);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-content {
+            padding: var(--spacing-xl);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-title {
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .service-description {
+            color: var(--text-medium);
+            margin-bottom: var(--spacing-xl);
+            flex-grow: 1;
+        }
+
+        .service-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-top: auto;
+        }
+
+        /* ===== BOOKING SECTION ===== */
+        .booking {
+            background-color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xxl);
+            align-items: center;
+        }
+
+        @media (max-width: 992px) {
+            .booking-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .booking-features {
+            margin-top: var(--spacing-xl);
+        }
+
+        .booking-feature {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+            align-items: flex-start;
+        }
+
+        .booking-feature i {
+            color: var(--accent-teal);
+            font-size: var(--font-size-xl);
+            margin-top: 2px;
+        }
+
+        .calendar-widget {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--medium-gray);
+        }
+
+        .calendar-widget::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent-gold), var(--accent-teal));
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .calendar-day {
+            text-align: center;
+            font-weight: 600;
+            color: var(--text-light);
+            padding: var(--spacing-sm) 0;
+            font-size: var(--font-size-sm);
+        }
+
+        .calendar-date {
+            text-align: center;
+            padding: var(--spacing-md) 0;
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            background-color: var(--light-gray);
+            border: 1px solid transparent;
+            font-weight: 500;
+        }
+
+        .calendar-date:hover:not(.unavailable) {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+            border-color: var(--accent-gold);
+        }
+
+        .calendar-date.selected {
+            background-color: var(--accent-teal);
+            color: var(--white);
+            border-color: var(--accent-teal);
+        }
+
+        .calendar-date.unavailable {
+            background-color: var(--medium-gray);
+            color: var(--text-light);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .time-slots {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .time-slot {
+            padding: var(--spacing-md);
+            text-align: center;
+            background-color: var(--light-gray);
+            border: 1px solid var(--medium-gray);
+            border-radius: var(--border-radius-md);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            font-weight: 500;
+        }
+
+        .time-slot:hover:not(.booked) {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+            border-color: var(--accent-gold);
+        }
+
+        .time-slot.selected {
+            background-color: var(--accent-teal);
+            color: var(--white);
+            border-color: var(--accent-teal);
+        }
+
+        .time-slot.booked {
+            background-color: var(--medium-gray);
+            color: var(--text-light);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        /* ===== APPROACH SECTION ===== */
+        .approach {
+            background-color: var(--light-gray);
+            position: relative;
+        }
+
+        .approach-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xxl);
+            align-items: center;
+        }
+
+        @media (max-width: 992px) {
+            .approach-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .approach-visual {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+            color: var(--white);
+            padding: var(--spacing-xxl);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .approach-visual i {
+            font-size: var(--font-size-4xl);
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .approach-visual h3 {
+            color: var(--white);
+        }
+
+        .approach-visual p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            background-color: var(--white);
+        }
+
+        .testimonial-slider {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            background: var(--light-gray);
+        }
+
+        .testimonial-slides {
+            display: flex;
+            transition: transform var(--transition-base);
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
+            padding: var(--spacing-xxl);
+            text-align: center;
+        }
+
+        .testimonial-text {
+            font-size: var(--font-size-lg);
+            font-style: italic;
+            margin-bottom: var(--spacing-xl);
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .testimonial-text::before,
+        .testimonial-text::after {
+            content: '"';
+            font-size: var(--font-size-4xl);
+            color: var(--accent-gold);
+            opacity: 0.3;
+            position: absolute;
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-text::before {
+            top: -20px;
+            left: -10px;
+        }
+
+        .testimonial-text::after {
+            bottom: -40px;
+            right: -10px;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-lg);
+        }
+
+        .client-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-teal));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .slider-btn {
+            background-color: var(--light-gray);
+            color: var(--primary-dark);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            border: none;
+            box-shadow: var(--shadow-md);
+        }
+
+        .slider-btn:hover {
+            background-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        .slider-dots {
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--medium-gray);
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+
+        .slider-dot.active {
+            background-color: var(--accent-gold);
+            transform: scale(1.2);
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact {
+            background-color: var(--off-white);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xxl);
+        }
+
+        @media (max-width: 992px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-details {
+            margin-top: var(--spacing-xl);
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-detail i {
+            color: var(--accent-gold);
+            font-size: var(--font-size-xl);
+            margin-right: var(--spacing-lg);
+            margin-top: 2px;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: linear-gradient(135deg, var(--primary-dark), #0C223F);
+            color: var(--white);
+            padding: var(--spacing-xxl) 0 var(--spacing-xl);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xxl);
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .footer-logo span {
+            color: var(--accent-gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-base);
+            color: var(--white);
+        }
+
+        .social-link:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        .footer-heading {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-lg);
+            color: var(--white);
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent-gold);
+            bottom: -8px;
+            left: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: all var(--transition-base);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+            padding-left: var(--spacing-sm);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: var(--font-size-sm);
+        }
+
+        /* ===== FORMS ===== */
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            border: 1px solid var(--medium-gray);
+            border-radius: var(--border-radius-md);
+            font-family: inherit;
+            font-size: var(--font-size-base);
+            transition: all var(--transition-base);
+            background-color: var(--white);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-teal);
+            box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.1);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1200px) {
+            :root {
+                --font-size-5xl: 2.5rem;
+                --font-size-4xl: 2rem;
+                --font-size-3xl: 1.75rem;
+            }
+            
+            .container {
+                padding: 0 var(--spacing-lg);
+            }
+        }
+
+        @media (max-width: 992px) {
+            :root {
+                --font-size-5xl: 2.25rem;
+                --font-size-4xl: 1.875rem;
+                --font-size-3xl: 1.5rem;
+                --font-size-2xl: 1.25rem;
+            }
+            
+            .section {
+                padding: var(--spacing-xl) 0;
+            }
+            
+            .hero {
+                padding: 140px 0 80px;
+                min-height: auto;
+            }
+            
+            .hero-title {
+                font-size: var(--font-size-4xl);
+            }
+            
+            .hero-subtitle {
+                font-size: var(--font-size-lg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* Mobile Navigation */
+            .nav-links {
+                display: none;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            /* Hero Section */
+            .hero-actions {
+                flex-direction: column;
+            }
+            
+            .hero-actions .btn {
+                width: 100%;
+            }
+            
+            /* Urgent Bar */
+            .urgent-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .urgent-actions {
+                width: 100%;
+            }
+            
+            .urgent-actions .btn {
+                flex: 1;
+                min-width: 200px;
+            }
+            
+            /* Services Grid */
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            /* Calendar */
+            .time-slots {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .calendar-grid {
+                gap: 4px;
+            }
+            
+            .calendar-date {
+                padding: 12px 0;
+            }
+            
+            /* Mobile Menu */
+            .mobile-menu {
+                max-width: 100%;
+                padding: 100px var(--spacing-lg) var(--spacing-lg);
+            }
+        }
+
+        @media (max-width: 576px) {
+            :root {
+                --font-size-5xl: 2rem;
+                --font-size-4xl: 1.75rem;
+                --font-size-lg: 1rem;
+            }
+            
+            .container {
+                padding: 0 var(--spacing-md);
+            }
+            
+            .hero {
+                padding: 120px 0 60px;
+            }
+            
+            .hero-title {
+                font-size: var(--font-size-3xl);
+            }
+            
+            .section-title::after {
+                width: 60px;
+                bottom: -10px;
+            }
+            
+            .time-slots {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-slide {
+                padding: var(--spacing-xl) var(--spacing-lg);
+            }
+            
+            .testimonial-text {
+                font-size: var(--font-size-base);
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xl);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .btn {
+                padding: var(--spacing-sm) var(--spacing-md);
+                font-size: var(--font-size-sm);
+            }
+            
+            .hero-stats {
+                gap: var(--spacing-lg);
+            }
+            
+            .stat-number {
+                font-size: var(--font-size-2xl);
+            }
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            .header,
+            .urgent-bar,
+            .hamburger,
+            .slider-controls,
+            .btn {
+                display: none !important;
+            }
+            
+            body {
+                color: #000;
+                background: #fff;
+            }
+            
+            .section {
+                padding: 20px 0;
+                page-break-inside: avoid;
+            }
+            
+            .container {
+                max-width: 100%;
+                padding: 0 20px;
+            }
+            
+            a {
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to Main Content for Accessibility -->
+    <a href="#main-content" class="d-none" style="position: absolute; top: -40px; left: 0; background: var(--accent-gold); color: white; padding: 8px; z-index: 1001;">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" id="header" role="banner">
+        <div class="container">
+            <nav class="navbar" aria-label="Main navigation">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <i class="fas fa-balance-scale logo-icon" aria-hidden="true"></i>
+                    <span>Whitney</span>Mont
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+                    <li role="none"><a href="#booking" class="nav-link" role="menuitem">Book Consultation</a></li>
+                    <li role="none"><a href="#approach" class="nav-link" role="menuitem">Our Approach</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                    <li role="none">
+                        <a href="tel:+15551234567" class="btn btn-primary btn-small" role="menuitem">
+                            <i class="fas fa-phone" aria-hidden="true"></i> Call Now
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburgerMenu" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay" role="presentation"></div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile menu">
+            <ul class="mobile-nav-links" role="menu">
+                <li role="none"><a href="#home" class="mobile-nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#services" class="mobile-nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="#booking" class="mobile-nav-link" role="menuitem">Book Consultation</a></li>
+                <li role="none"><a href="#approach" class="mobile-nav-link" role="menuitem">Our Approach</a></li>
+                <li role="none"><a href="#contact" class="mobile-nav-link" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="mobile-contact-details">
+                <h4>Contact Information</h4>
+                <div class="mobile-contact-detail">
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="mobile-contact-detail">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <div>
+                        <p><strong>Email:</strong> research@whitneymont.com</p>
+                    </div>
+                </div>
+                <div class="mobile-contact-detail">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <div>
+                        <p><strong>Offices:</strong> New York, London, Singapore, San Francisco</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="tel:+15551234567" class="btn btn-urgent" role="button">
+                    <i class="fas fa-phone" aria-hidden="true"></i> Emergency Call
+                </a>
+                <a href="#booking" class="btn btn-primary" role="button">
+                    <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Consultation
+                </a>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-secondary" role="button">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Get Directions
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Urgent Action Bar -->
+    <div class="urgent-bar" role="complementary" aria-label="Urgent actions">
+        <div class="container">
+            <div class="urgent-content">
+                <div class="urgent-text">
+                    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+                    <span>Need immediate legal research assistance? We're here to help 24/7.</span>
+                </div>
+                <div class="urgent-actions">
+                    <a href="tel:+15551234567" class="btn btn-urgent btn-small" role="button">
+                        <i class="fas fa-phone" aria-hidden="true"></i> Call Now
+                    </a>
+                    <a href="#booking" class="btn btn-outline btn-small" role="button">
+                        <i class="fas fa-calendar-check" aria-hidden="true"></i> Request Consultation
+                    </a>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-small" role="button">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home" role="region" aria-label="Introduction">
+            <div class="hero-bg" role="presentation"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Innovative Legal Research Solutions for Complex Challenges</h1>
+                    <p class="hero-subtitle">Whitney Mont delivers multidisciplinary legal solutions across litigation, intellectual property, restructuring, and transactional services. We work together across offices and practice areas as integrated teams to generate exceptional results for our clients.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn btn-primary btn-large" role="button">
+                            <i class="fas fa-calendar-check" aria-hidden="true"></i> Book a Consultation
+                        </a>
+                        <a href="#services" class="btn btn-outline btn-large" role="button">
+                            <i class="fas fa-search" aria-hidden="true"></i> Explore Our Services
+                        </a>
+                        <a href="tel:+15551234567" class="btn btn-urgent btn-large" role="button">
+                            <i class="fas fa-phone" aria-hidden="true"></i> Emergency Call
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">250+</span>
+                            <span class="stat-label">Satisfied Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Cases Resolved</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">75+</span>
+                            <span class="stat-label">Expert Researchers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Global Offices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services" role="region" aria-label="Our Services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Legal Research Services</h2>
+                    <p class="section-subtitle">Comprehensive, innovative solutions across key legal disciplines</p>
+                </div>
+                
+                <div class="services-grid">
+                    <article class="service-card" role="article" aria-label="Litigation Research">
+                        <div class="service-icon">
+                            <i class="fas fa-gavel" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Litigation Research</h3>
+                            <p class="service-description">Comprehensive case law analysis, precedent research, and strategy development for complex litigation matters across all jurisdictions.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="btn btn-primary btn-small" role="button">
+                                    <i class="fas fa-calendar" aria-hidden="true"></i> Consult Now
+                                </a>
+                                <a href="tel:+15551234567" class="btn btn-secondary btn-small" role="button">
+                                    <i class="fas fa-phone" aria-hidden="true"></i> Call
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" role="article" aria-label="Intellectual Property">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Intellectual Property</h3>
+                            <p class="service-description">Patent analysis, trademark research, IP portfolio strategy, and infringement studies to protect your intellectual assets globally.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="btn btn-primary btn-small" role="button">
+                                    <i class="fas fa-calendar" aria-hidden="true"></i> Consult Now
+                                </a>
+                                <a href="tel:+15551234567" class="btn btn-secondary btn-small" role="button">
+                                    <i class="fas fa-phone" aria-hidden="true"></i> Call
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" role="article" aria-label="Restructuring">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Restructuring</h3>
+                            <p class="service-description">Financial analysis, creditor rights research, bankruptcy precedents, and strategic guidance for corporate restructuring.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="btn btn-primary btn-small" role="button">
+                                    <i class="fas fa-calendar" aria-hidden="true"></i> Consult Now
+                                </a>
+                                <a href="tel:+15551234567" class="btn btn-secondary btn-small" role="button">
+                                    <i class="fas fa-phone" aria-hidden="true"></i> Call
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" role="article" aria-label="Transactional">
+                        <div class="service-icon">
+                            <i class="fas fa-file-contract" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Transactional</h3>
+                            <p class="service-description">Due diligence research, regulatory compliance analysis, contract precedent research, and M&A transaction support.</p>
+                            <div class="service-actions">
+                                <a href="#booking" class="btn btn-primary btn-small" role="button">
+                                    <i class="fas fa-calendar" aria-hidden="true"></i> Consult Now
+                                </a>
+                                <a href="tel:+15551234567" class="btn btn-secondary btn-small" role="button">
+                                    <i class="fas fa-phone" aria-hidden="true"></i> Call
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="booking section" id="booking" role="region" aria-label="Book Consultation">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Book Your Consultation</h2>
+                    <p class="section-subtitle">Schedule a meeting with our legal research experts at your convenience</p>
+                </div>
+                
+                <div class="booking-content">
+                    <div class="booking-info">
+                        <h3 class="mb-lg">Schedule a Consultation</h3>
+                        <p class="text-lead mb-xl">Meet with our legal research specialists to discuss your specific needs and challenges. We'll match you with the right experts from our multidisciplinary team.</p>
+                        
+                        <div class="booking-features">
+                            <div class="booking-feature">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Flexible Scheduling</h4>
+                                    <p>Choose from available time slots that work for your schedule</p>
+                                </div>
+                            </div>
+                            
+                            <div class="booking-feature">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Expert Matching</h4>
+                                    <p>We'll connect you with the right specialist for your legal needs</p>
+                                </div>
+                            </div>
+                            
+                            <div class="booking-feature">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Virtual or In-Person</h4>
+                                    <p>Choose between video consultation or meeting at our offices</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-actions mt-xl">
+                            <a href="tel:+15551234567" class="btn btn-urgent mb-md" role="button">
+                                <i class="fas fa-phone" aria-hidden="true"></i> Call Now for Urgent Matters
+                            </a>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-secondary" role="button">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Get Directions to Our Office
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-widget" role="form" aria-label="Appointment booking">
+                        <div class="calendar-header">
+                            <h3>Select Date & Time</h3>
+                            <div class="calendar-nav">
+                                <button id="prevMonth" class="btn btn-secondary btn-small" aria-label="Previous month">
+                                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <span id="currentMonth" class="font-weight-bold">June 2023</span>
+                                <button id="nextMonth" class="btn btn-secondary btn-small" aria-label="Next month">
+                                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="calendar-grid" id="calendarGrid" role="grid" aria-label="Calendar">
+                            <!-- Calendar days generated by JavaScript -->
+                        </div>
+                        
+                        <div class="time-slots" id="timeSlots" role="listbox" aria-label="Available time slots">
+                            <!-- Time slots generated by JavaScript -->
+                        </div>
+                        
+                        <form id="bookingForm" class="booking-form" aria-label="Appointment booking form">
+                            <div class="form-group">
+                                <label for="bookingName" class="form-label">Full Name *</label>
+                                <input type="text" id="bookingName" class="form-control" placeholder="Enter your full name" required aria-required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bookingEmail" class="form-label">Email Address *</label>
+                                <input type="email" id="bookingEmail" class="form-control" placeholder="Enter your email address" required aria-required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bookingPhone" class="form-label">Phone Number</label>
+                                <input type="tel" id="bookingPhone" class="form-control" placeholder="Enter your phone number">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-calendar-check" aria-hidden="true"></i> Confirm Appointment
+                            </button>
+                            
+                            <div id="bookingSuccess" class="d-none" role="alert" aria-live="polite" style="margin-top: var(--spacing-lg); padding: var(--spacing-md); background: var(--accent-teal); color: white; border-radius: var(--border-radius-md); text-align: center;">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i> Appointment booked successfully! We'll send you a confirmation email.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section class="approach section" id="approach" role="region" aria-label="Our Approach">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Multidisciplinary Approach</h2>
+                    <p class="section-subtitle">Integrated teams working together to deliver exceptional results</p>
+                </div>
+                
+                <div class="approach-content">
+                    <div class="approach-visual">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <h3>Collaborative Excellence</h3>
+                        <p>Our multidisciplinary teams work together across offices and practice areas to provide the capabilities necessary to generate great results for our clients. We leverage diverse expertise to create innovative legal solutions.</p>
+                        <div class="mt-xl">
+                            <a href="#contact" class="btn btn-outline" role="button">Connect With Our Team</a>
+                        </div>
+                    </div>
+                    
+                    <div class="approach-info">
+                        <h3 class="mb-lg">Integrated Legal Research Solutions</h3>
+                        <p class="text-lead mb-xl">At Whitney Mont, we break down traditional silos between legal practice areas. Our integrated teams collaborate across offices and disciplines to provide comprehensive solutions that address the full spectrum of our clients' legal challenges.</p>
+                        
+                        <div class="booking-features">
+                            <div class="booking-feature">
+                                <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Cross-Office Collaboration</h4>
+                                    <p>Seamless coordination between our global offices in New York, London, Singapore, and San Francisco.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="booking-feature">
+                                <i class="fas fa-rocket" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Innovative Methodologies</h4>
+                                    <p>Cutting-edge research approaches and proprietary analysis tools.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="booking-feature">
+                                <i class="fas fa-handshake" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Client-Centric Focus</h4>
+                                    <p>Tailored strategies designed around your specific business objectives and legal needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-actions mt-xl">
+                            <a href="#booking" class="btn btn-primary" role="button">
+                                <i class="fas fa-calendar-check" aria-hidden="true"></i> Schedule Strategy Session
+                            </a>
+                            <a href="tel:+15551234567" class="btn btn-secondary" role="button">
+                                <i class="fas fa-phone" aria-hidden="true"></i> Speak With Director
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section" role="region" aria-label="Client Testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Client Testimonials</h2>
+                    <p class="section-subtitle">What our clients say about our legal research services</p>
+                </div>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-slides" id="testimonialSlides">
+                        <div class="testimonial-slide" role="group" aria-label="Testimonial 1 of 3">
+                            <blockquote class="testimonial-text">
+                                Whitney Mont's multidisciplinary approach to our complex litigation research was exceptional. Their integrated team provided insights from multiple practice areas that significantly strengthened our case strategy.
+                            </blockquote>
+                            <div class="client-info">
+                                <div class="client-avatar" aria-hidden="true">MR</div>
+                                <div class="client-details">
+                                    <h4>Michael Rodriguez</h4>
+                                    <p>General Counsel, TechForward Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-slide" role="group" aria-label="Testimonial 2 of 3">
+                            <blockquote class="testimonial-text">
+                                The intellectual property research provided by Whitney Mont was thorough and innovative. Their cross-office collaboration gave us a global perspective we couldn't find elsewhere.
+                            </blockquote>
+                            <div class="client-info">
+                                <div class="client-avatar" aria-hidden="true">SC</div>
+                                <div class="client-details">
+                                    <h4>Sarah Chen</h4>
+                                    <p>CEO, Innovate Pharmaceuticals</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-slide" role="group" aria-label="Testimonial 3 of 3">
+                            <blockquote class="testimonial-text">
+                                During our restructuring process, Whitney Mont's research team provided critical analysis that guided our strategic decisions. Their integrated approach delivered results beyond our expectations.
+                            </blockquote>
+                            <div class="client-info">
+                                <div class="client-avatar" aria-hidden="true">RJ</div>
+                                <div class="client-details">
+                                    <h4>Robert Johnson</h4>
+                                    <p>CFO, Global Manufacturing Corp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-btn" id="prevTestimonial" aria-label="Previous testimonial">
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        
+                        <div class="slider-dots" role="tablist" aria-label="Testimonial navigation">
+                            <button class="slider-dot active" role="tab" aria-selected="true" aria-controls="testimonial1" data-slide="0" aria-label="Go to testimonial 1"></button>
+                            <button class="slider-dot" role="tab" aria-selected="false" aria-controls="testimonial2" data-slide="1" aria-label="Go to testimonial 2"></button>
+                            <button class="slider-dot" role="tab" aria-selected="false" aria-controls="testimonial3" data-slide="2" aria-label="Go to testimonial 3"></button>
+                        </div>
+                        
+                        <button class="slider-btn" id="nextTestimonial" aria-label="Next testimonial">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact" role="region" aria-label="Contact Us">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Our Research Team</h2>
+                    <p class="section-subtitle">Get in touch to discuss your legal research needs</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="mb-lg">Get In Touch</h3>
+                        <p class="text-lead mb-xl">Ready to leverage our innovative legal research capabilities? Contact us to discuss how our multidisciplinary approach can address your specific legal challenges.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Our Offices</h4>
+                                    <p>New York | London | Singapore | San Francisco</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>research@whitneymont.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-actions mt-xl">
+                            <a href="tel:+15551234567" class="btn btn-urgent" role="button">
+                                <i class="fas fa-phone" aria-hidden="true"></i> Call Now
+                            </a>
+                            <a href="#booking" class="btn btn-primary" role="button">
+                                <i class="fas fa-calendar-check" aria-hidden="true"></i> Request Consultation
+                            </a>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-secondary" role="button">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-widget">
+                        <div class="calendar-header">
+                            <h3>Quick Booking</h3>
+                        </div>
+                        <p class="mb-lg">Schedule a brief introductory call with our team:</p>
+                        
+                        <div class="time-slots">
+                            <div class="time-slot" data-time="10:00 AM">10:00 AM</div>
+                            <div class="time-slot" data-time="11:30 AM">11:30 AM</div>
+                            <div class="time-slot" data-time="2:00 PM">2:00 PM</div>
+                            <div class="time-slot" data-time="3:30 PM">3:30 PM</div>
+                            <div class="time-slot" data-time="4:45 PM">4:45 PM</div>
+                        </div>
+                        
+                        <form id="quickContactForm" class="booking-form" aria-label="Quick contact form">
+                            <div class="form-group">
+                                <label for="quickName" class="form-label">Your Name</label>
+                                <input type="text" id="quickName" class="form-control" placeholder="Enter your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quickEmail" class="form-label">Your Email</label>
+                                <input type="email" id="quickEmail" class="form-control" placeholder="Enter your email">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Quick Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-balance-scale" aria-hidden="true"></i>
+                        <span>Whitney</span>Mont
+                    </div>
+                    <p>Providing innovative legal research solutions through integrated, multidisciplinary teams across litigation, intellectual property, restructuring, and transactional services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Book Consultation</a></li>
+                        <li><a href="#approach">Our Approach</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Litigation Research</a></li>
+                        <li><a href="#services">Intellectual Property</a></li>
+                        <li><a href="#services">Restructuring</a></li>
+                        <li><a href="#services">Transactional</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Urgent Contact</h4>
+                    <div class="contact-actions">
+                        <a href="tel:+15551234567" class="btn btn-urgent" style="width: 100%;" role="button">
+                            <i class="fas fa-phone" aria-hidden="true"></i> Emergency Call
+                        </a>
+                        <a href="#booking" class="btn btn-outline" style="width: 100%; margin-top: var(--spacing-md);" role="button">
+                            <i class="fas fa-calendar-check" aria-hidden="true"></i> Urgent Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Whitney Mont Legal Research Firm. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ===== FIXED HAMBURGER MENU FUNCTIONALITY =====
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const body = document.body;
+
+        // Function to open mobile menu
+        function openMobileMenu() {
+            hamburgerMenu.classList.add('active');
+            hamburgerMenu.setAttribute('aria-expanded', 'true');
+            mobileMenuOverlay.classList.add('active');
+            mobileMenu.classList.add('active');
+            body.style.overflow = 'hidden';
+            
+            // Focus on first link in mobile menu for accessibility
+            setTimeout(() => {
+                const firstLink = mobileMenu.querySelector('.mobile-nav-link');
+                if (firstLink) firstLink.focus();
+            }, 100);
+        }
+
+        // Function to close mobile menu
+        function closeMobileMenu() {
+            hamburgerMenu.classList.remove('active');
+            hamburgerMenu.setAttribute('aria-expanded', 'false');
+            mobileMenuOverlay.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            body.style.overflow = '';
+            
+            // Return focus to hamburger button
+            hamburgerMenu.focus();
+        }
+
+        // Function to toggle mobile menu
+        function toggleMobileMenu() {
+            const isExpanded = hamburgerMenu.getAttribute('aria-expanded') === 'true';
+            
+            if (isExpanded) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        }
+
+        // Event listeners for hamburger menu
+        hamburgerMenu.addEventListener('click', toggleMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close menu when clicking links
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeMobileMenu();
+                
+                // Get target section and scroll to it
+                const href = link.getAttribute('href');
+                if (href && href !== '#') {
+                    setTimeout(() => {
+                        const targetSection = document.querySelector(href);
+                        if (targetSection) {
+                            targetSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }, 300);
+                }
+            });
+        });
+
+        // Close menu with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        });
+
+        // ===== HEADER SCROLL EFFECT =====
+        const header = document.getElementById('header');
+        const urgentBar = document.querySelector('.urgent-bar');
+
+        function updateHeader() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                urgentBar.style.top = '70px';
+            } else {
+                header.classList.remove('scrolled');
+                urgentBar.style.top = '80px';
+            }
+        }
+
+        window.addEventListener('scroll', updateHeader);
+        updateHeader(); // Initial call
+
+        // ===== SMOOTH SCROLLING =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || this.classList.contains('mobile-nav-link')) return;
+
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Update URL without scrolling
+                    history.pushState(null, null, href);
+                }
+            });
+        });
+
+        // ===== CALENDAR FUNCTIONALITY =====
+        let currentDate = new Date();
+        let selectedDate = null;
+        let selectedTime = null;
+
+        const monthNames = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+        ];
+
+        const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        function renderCalendar() {
+            const calendarGrid = document.getElementById('calendarGrid');
+            const currentMonthElement = document.getElementById('currentMonth');
+            
+            // Clear previous calendar
+            calendarGrid.innerHTML = '';
+            
+            // Update month display
+            currentMonthElement.textContent = 
+                `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
+            
+            // Add day headers
+            dayNames.forEach(day => {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'calendar-day';
+                dayElement.textContent = day;
+                dayElement.setAttribute('role', 'columnheader');
+                calendarGrid.appendChild(dayElement);
+            });
+            
+            // Calculate first day of month
+            const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+            const startingDay = firstDay.getDay();
+            
+            // Calculate last day of month
+            const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+            const totalDays = lastDay.getDate();
+            
+            // Fill empty cells before first day
+            for (let i = 0; i < startingDay; i++) {
+                const emptyCell = document.createElement('div');
+                emptyCell.className = 'calendar-date empty';
+                emptyCell.setAttribute('role', 'gridcell');
+                calendarGrid.appendChild(emptyCell);
+            }
+            
+            // Create date cells
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            for (let day = 1; day <= totalDays; day++) {
+                const dateCell = document.createElement('div');
+                dateCell.className = 'calendar-date';
+                dateCell.textContent = day;
+                dateCell.setAttribute('role', 'gridcell');
+                dateCell.setAttribute('tabindex', '0');
+                
+                const cellDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
+                
+                // Mark today
+                if (cellDate.getTime() === today.getTime()) {
+                    dateCell.classList.add('today');
+                }
+                
+                // Mark weekends as unavailable
+                const dayOfWeek = cellDate.getDay();
+                if (dayOfWeek === 0 || dayOfWeek === 6) {
+                    dateCell.classList.add('unavailable');
+                    dateCell.setAttribute('aria-disabled', 'true');
+                }
+                
+                // Mark past dates as unavailable
+                if (cellDate < today) {
+                    dateCell.classList.add('unavailable');
+                    dateCell.setAttribute('aria-disabled', 'true');
+                }
+                
+                // Mark selected date
+                if (selectedDate && 
+                    cellDate.getDate() === selectedDate.getDate() &&
+                    cellDate.getMonth() === selectedDate.getMonth() &&
+                    cellDate.getFullYear() === selectedDate.getFullYear()) {
+                    dateCell.classList.add('selected');
+                    dateCell.setAttribute('aria-selected', 'true');
+                }
+                
+                // Add click event for available dates
+                if (!dateCell.classList.contains('unavailable')) {
+                    dateCell.addEventListener('click', () => selectDate(cellDate, dateCell));
+                    dateCell.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            selectDate(cellDate, dateCell);
+                        }
+                    });
+                }
+                
+                calendarGrid.appendChild(dateCell);
+            }
+        }
+
+        function selectDate(date, element) {
+            // Remove selection from previous date
+            document.querySelectorAll('.calendar-date.selected').forEach(el => {
+                el.classList.remove('selected');
+                el.removeAttribute('aria-selected');
+            });
+            
+            // Select new date
+            element.classList.add('selected');
+            element.setAttribute('aria-selected', 'true');
+            selectedDate = date;
+            
+            // Generate time slots for selected date
+            generateTimeSlots();
+        }
+
+        function generateTimeSlots() {
+            const timeSlotsContainer = document.getElementById('timeSlots');
+            timeSlotsContainer.innerHTML = '';
+            
+            if (!selectedDate) return;
+            
+            const timeSlots = [
+                '9:00 AM', '10:30 AM', '12:00 PM', 
+                '2:00 PM', '3:30 PM', '5:00 PM'
+            ];
+            
+            timeSlots.forEach((time, index) => {
+                const timeSlot = document.createElement('div');
+                timeSlot.className = 'time-slot';
+                timeSlot.textContent = time;
+                timeSlot.dataset.time = time;
+                timeSlot.setAttribute('role', 'option');
+                timeSlot.setAttribute('tabindex', '0');
+                timeSlot.id = `timeSlot${index}`;
+                
+                // Randomly mark some time slots as booked (for demo)
+                if (Math.random() > 0.7) {
+                    timeSlot.classList.add('booked');
+                    timeSlot.setAttribute('aria-disabled', 'true');
+                }
+                
+                if (selectedTime === time) {
+                    timeSlot.classList.add('selected');
+                    timeSlot.setAttribute('aria-selected', 'true');
+                }
+                
+                if (!timeSlot.classList.contains('booked')) {
+                    timeSlot.addEventListener('click', () => selectTime(time, timeSlot));
+                    timeSlot.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            selectTime(time, timeSlot);
+                        }
+                    });
+                }
+                
+                timeSlotsContainer.appendChild(timeSlot);
+            });
+        }
+
+        function selectTime(time, element) {
+            // Remove selection from previous time
+            document.querySelectorAll('.time-slot.selected').forEach(el => {
+                el.classList.remove('selected');
+                el.removeAttribute('aria-selected');
+            });
+            
+            // Select new time
+            element.classList.add('selected');
+            element.setAttribute('aria-selected', 'true');
+            selectedTime = time;
+        }
+
+        // Initialize calendar
+        renderCalendar();
+
+        // Calendar navigation
+        document.getElementById('prevMonth').addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar();
+        });
+
+        document.getElementById('nextMonth').addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar();
+        });
+
+        // ===== FORM HANDLING =====
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!selectedDate || !selectedTime) {
+                alert('Please select a date and time for your appointment.');
+                return;
+            }
+            
+            // Show success message
+            const successMessage = document.getElementById('bookingSuccess');
+            successMessage.classList.remove('d-none');
+            successMessage.setAttribute('role', 'alert');
+            
+            // Reset form
+            this.reset();
+            selectedDate = null;
+            selectedTime = null;
+            
+            // Remove selections
+            document.querySelectorAll('.calendar-date.selected, .time-slot.selected').forEach(el => {
+                el.classList.remove('selected');
+                el.removeAttribute('aria-selected');
+            });
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.add('d-none');
+            }, 5000);
+        });
+
+        document.getElementById('quickContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your inquiry has been submitted. We will contact you within 24 hours.');
+            this.reset();
+        });
+
+        // ===== TESTIMONIAL SLIDER =====
+        let currentTestimonial = 0;
+        const testimonialSlides = document.getElementById('testimonialSlides');
+        const testimonialDots = document.querySelectorAll('.slider-dot');
+
+        function showTestimonial(index) {
+            currentTestimonial = (index + 3) % 3;
+            testimonialSlides.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+            
+            // Update dots
+            testimonialDots.forEach((dot, i) => {
+                const isSelected = i === currentTestimonial;
+                dot.classList.toggle('active', isSelected);
+                dot.setAttribute('aria-selected', isSelected);
+                
+                // Update ARIA labels
+                if (isSelected) {
+                    dot.setAttribute('aria-label', `Current testimonial ${i + 1} of 3`);
+                } else {
+                    dot.setAttribute('aria-label', `Go to testimonial ${i + 1} of 3`);
+                }
+            });
+        }
+
+        document.getElementById('prevTestimonial').addEventListener('click', () => {
+            showTestimonial(currentTestimonial - 1);
+        });
+
+        document.getElementById('nextTestimonial').addEventListener('click', () => {
+            showTestimonial(currentTestimonial + 1);
+        });
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showTestimonial(index);
+            });
+        });
+
+        // Auto-advance testimonials
+        let testimonialInterval = setInterval(() => {
+            showTestimonial(currentTestimonial + 1);
+        }, 5000);
+
+        // Pause auto-advance on hover
+        const slider = document.querySelector('.testimonial-slider');
+        slider.addEventListener('mouseenter', () => {
+            clearInterval(testimonialInterval);
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            testimonialInterval = setInterval(() => {
+                showTestimonial(currentTestimonial + 1);
+            }, 5000);
+        });
+
+        // ===== TOUCH SUPPORT FOR MOBILE =====
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        testimonialSlides.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        testimonialSlides.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            
+            if (touchStartX - touchEndX > swipeThreshold) {
+                // Swipe left - next testimonial
+                showTestimonial(currentTestimonial + 1);
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                // Swipe right - previous testimonial
+                showTestimonial(currentTestimonial - 1);
+            }
+        }
+
+        // Initialize the page
+        updateHeader();
+    </script>
+</body>
+</html>
